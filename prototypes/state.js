@@ -1,0 +1,8 @@
+export function evaluateValue(input,vars){
+ if(input==null)return input;if(typeof input!=='object')return input;
+ if(input.type==='VARIABLE_ALIAS')return vars[input.id||input.value?.id];
+ if(input.type==='EXPRESSION')return evaluateValue(input.value,vars);
+ if(input.expressionFunction){const a=(input.expressionArguments||[]).map(x=>evaluateValue(x,vars));switch(input.expressionFunction){case'EQUALS':return a[0]===a[1];case'NOT_EQUAL':case'NOT_EQUALS':return a[0]!==a[1];case'AND':return a.every(Boolean);case'OR':return a.some(Boolean);case'NOT':return !a[0];case'ADDITION':return a[0]+a[1];case'SUBTRACTION':return a[0]-a[1];case'MULTIPLICATION':return a[0]*a[1];case'DIVISION':return a[0]/a[1];case'GREATER_THAN':return a[0]>a[1];case'LESS_THAN':return a[0]<a[1];case'GREATER_THAN_OR_EQUAL':return a[0]>=a[1];case'LESS_THAN_OR_EQUAL':return a[0]<=a[1];case'NEGATE':return -a[0];case'VAR_MODE_LOOKUP':return a[0];default:throw Error('Unsupported expression '+input.expressionFunction);}}
+ if('value'in input)return evaluateValue(input.value,vars);return input;
+}
+export function executeActions(actions,vars,hooks={}){for(const a of actions||[]){if(!a)continue;switch(a.type){case'SET_VARIABLE':vars[a.variableId]=evaluateValue(a.variableValue,vars);hooks.set?.(a);break;case'CONDITIONAL':for(const b of a.conditionalBlocks||[]){if(!b.condition||evaluateValue(b.condition,vars)){executeActions(b.actions,vars,hooks);break;}}break;case'NODE':hooks.node?.(a);break;case'BACK':hooks.back?.();break;case'CLOSE':hooks.close?.();break;case'URL':hooks.url?.(a);break;case'SET_VARIABLE_MODE':break;default:throw Error('Unsupported action '+a.type);}}}
