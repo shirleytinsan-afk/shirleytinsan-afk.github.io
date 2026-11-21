@@ -22,3 +22,6 @@
 
 /* Compact recruiting contact section. */
 .contact.contact-compact{padding-block:64px}.contact-compact h2{font-size:32px;line-height:1.4}.contact-compact .contact-grid{display:block;margin-top:16px}.contact-compact .contact-email{margin-top:24px}.contact-compact .contact-status:empty{display:none}.contact-compact .contact-actions{margin-top:18px}.contact-compact .note{max-width:640px}@media(max-width:760px){.contact.contact-compact{padding-block:40px}.contact-compact h2{font-size:26px}}
+
+/* Recruiting review: keep supporting material accessible without lengthening the main story. */
+.case-extra summary{cursor:pointer;display:flex;justify-content:space-between;gap:24px;font-size:20px;line-height:1.6;font-weight:500;list-style:none}.case-extra summary::before{content:"＋"}.case-extra[open] summary::before{content:"−"}.case-extra summary span{font-size:12px;white-space:nowrap;color:#657159;margin-left:auto}.case-extra>div{padding-top:30px}.desktop-demo-note{margin-bottom:20px;padding:14px 18px;background:#e9eddf;border-radius:8px}@media(max-width:600px){.case-extra summary{font-size:17px;gap:10px}.case-extra summary span{font-size:10px}}

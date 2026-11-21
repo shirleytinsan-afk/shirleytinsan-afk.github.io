@@ -208,7 +208,8 @@
               "text": "状況：複数の園児を見ながら、個別の注意事項を確認する。\n必要：受診内容と観察点を把握し、見たこと・対応したことを残せること。\n設計：受診共有カード、確認状態、園での観察記録。",
               "size": 16
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "2837:1165",
@@ -430,7 +431,8 @@
               "text": "07 アカウント・はじめての利用　／　08 完了・エラー・操作状態　／　09 QA修正・服薬結果と確認状態",
               "size": 16
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3247:6735",
@@ -652,7 +654,8 @@
               "alt": "AREA 03 / 予防接種の記録",
               "src": "assets/renraku-case-3247-7823-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3258:8569",
@@ -690,7 +693,8 @@
               "alt": "AREA 04 / 日常の育児記録",
               "src": "assets/renraku-case-3258-8574-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3247:7392",
@@ -728,7 +732,8 @@
               "alt": "AREA 05 / 成長・思い出",
               "src": "assets/renraku-case-3247-7397-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3258:9137",
@@ -766,7 +771,8 @@
               "alt": "AREA 06 / 家族・予定・設定",
               "src": "assets/renraku-case-3258-9142-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3258:9545",
@@ -804,7 +810,8 @@
               "alt": "AREA 07 / アカウント・はじめての利用",
               "src": "assets/renraku-case-3258-9550-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3258:10324",
@@ -842,7 +849,8 @@
               "alt": "AREA 08 / 完了・エラー・操作状態",
               "src": "assets/renraku-case-3258-10329-full.png"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "3258:10583",
@@ -1062,7 +1070,8 @@
               "text": "記録",
               "size": 12
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "2837:1267",
@@ -1090,13 +1099,16 @@
               "type": "text",
               "id": "2837:1271",
               "text": "▶ 日常連絡・健康・成長のシナリオ一覧を開く",
-              "size": 20
+              "size": 20,
+              "prototypeIndex": 0
             },
             {
               "type": "text",
               "id": "2837:1273",
               "text": "↗ 体調共有：症状タイムラインから体験する",
-              "size": 16
+              "size": 16,
+              "prototypeIndex": 0,
+              "prototypeStart": "3016:11892"
             }
           ]
         },
@@ -1177,7 +1189,7 @@
     },
     {
       "id": "sstuido",
-      "title": "s/stuido",
+      "title": "s/studio",
       "category": "自主制作 · B2B SaaS",
       "group": "Selected projects",
       "summary": "依頼から承認まで。役割と進捗を整理し、次の行動を明確に。",
@@ -1199,7 +1211,7 @@
       "sections": [
         {
           "id": "126:170",
-          "title": "s/stuido",
+          "title": "s/studio",
           "blocks": [
             {
               "id": "126:172",
@@ -1210,7 +1222,7 @@
             },
             {
               "id": "126:173",
-              "text": "s/stuido",
+              "text": "s/studio",
               "size": 72,
               "link": null,
               "type": "text"
@@ -1241,7 +1253,8 @@
               "text": "プロトタイプを試す ↗",
               "size": 14,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 0
             },
             {
               "id": "126:182",
@@ -1250,7 +1263,7 @@
               "h": 1440,
               "type": "image",
               "src": "assets/126-182.png",
-              "alt": "s/stuido"
+              "alt": "s/studio"
             },
             {
               "id": "126:183",
@@ -1780,7 +1793,7 @@
           "blocks": [
             {
               "id": "126:257",
-              "text": "TRY S/STUIDO",
+              "text": "TRY S/STUDIO",
               "size": 12,
               "link": null,
               "type": "text"
@@ -1794,7 +1807,7 @@
             },
             {
               "id": "126:259",
-              "text": "Figma内の画面遷移デモです。画面内の進捗率・件数・人物・会話はデモデータで、実績値や調査結果ではありません。アップロード・通知・PDF出力・保存・アクセス制御の実処理は未実装です。",
+              "text": "このサイト内で動く画面遷移デモです。画面内の進捗率・件数・人物・会話はデモデータで、実績値や調査結果ではありません。アップロード・通知・PDF出力・保存・アクセス制御の実処理は未実装です。",
               "size": 16,
               "link": null,
               "type": "text"
@@ -1804,14 +1817,16 @@
               "text": "デザイナー側：制作・提出・報告 ↗",
               "size": 14,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 0
             },
             {
               "id": "126:264",
               "text": "クライアント側：確認・フィードバック ↗",
               "size": 14,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 1
             },
             {
               "id": "126:267",
@@ -1836,33 +1851,21 @@
       "prototypes": [],
       "sections": [
         {
-          "id": "164:162",
-          "title": "ZUIKI / RECRUIT SITE / UI DESIGN CASE STUDY",
+          "id": "164:164",
+          "title": "事業と働く人を、わかりやすく身近に。",
           "blocks": [
             {
               "type": "text",
               "text": "ZUIKI / RECRUIT SITE / UI DESIGN CASE STUDY",
               "size": 12,
               "id": "164:162"
-            }
-          ]
-        },
-        {
-          "id": "164:163",
-          "title": "2022.08 / PC DESIGN / Adobe XD · Illustrator · Photoshop",
-          "blocks": [
+            },
             {
               "type": "text",
               "text": "2022.08  /  PC DESIGN  /  Adobe XD · Illustrator · Photoshop",
               "size": 12,
               "id": "164:163"
-            }
-          ]
-        },
-        {
-          "id": "164:164",
-          "title": "事業と働く人を、わかりやすく身近に。",
-          "blocks": [
+            },
             {
               "id": "164:165",
               "text": "01 / PROJECT OVERVIEW",
@@ -3037,7 +3040,7 @@
             },
             {
               "id": "186:165",
-              "text": "個人コンセプトUIの操作デモです。タイトル選択、設定、セーブデータの削除、ポーズ操作を確認できます。各リンクは別タブで開きます。ゲーム本編は対象外です。",
+              "text": "個人コンセプトUIの操作デモです。タイトル選択、設定、セーブデータの削除、ポーズ操作を確認できます。各リンクから、このページ内の対応する操作デモへ進めます。ゲーム本編は対象外です。",
               "size": 16,
               "link": null,
               "type": "text"
@@ -3047,21 +3050,24 @@
               "text": "メインフローを試す ↗",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 0
             },
             {
               "id": "186:168",
               "text": "セーブデータの削除を試す ↗",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 1
             },
             {
               "id": "186:170",
               "text": "ポーズ・セーブ・ロードを試す ↗",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 2
             }
           ]
         },
@@ -4308,14 +4314,16 @@
               "text": "Player｜起動から終了まで体験する ↗",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 0
             },
             {
               "id": "190:181",
               "text": "Staff｜設定・保存・破棄を体験する ↗",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 1
             }
           ]
         },
@@ -4891,14 +4899,16 @@
               "text": "▶ プレイヤー：起動から終了まで",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 0
             },
             {
               "id": "190:282",
               "text": "▶ スタッフ：選択・保存・未保存退出",
               "size": 20,
               "link": null,
-              "type": "text"
+              "type": "text",
+              "prototypeIndex": 1
             },
             {
               "id": "190:266",
@@ -5204,7 +5214,8 @@
               "link": null,
               "type": "text"
             }
-          ]
+          ],
+          "collapsed": true
         },
         {
           "id": "190:329",
@@ -5315,7 +5326,8 @@
               "link": null,
               "type": "text"
             }
-          ]
+          ],
+          "collapsed": true
         }
       ]
     }
